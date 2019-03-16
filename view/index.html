@@ -4,56 +4,64 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Index</title>
+	<title>Log In</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
+	<script>
+		function verify(){
+		var mail = document.getElementById("exampleInputEmail1").value;
+		var pwd = document.getElementById("exampleInputPassword1").value;
+		if(mail != "abc@gmail.com" || pwd != 12345)
+			{
+				alert("Incorrect Mail id or Password");
+				return false;
+				}
+		else 
+		return true;		
+		}
+		
 
+			</script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	 -->
+</head>
 
 <body>
 	<div class="container">
     <nav class="navbar col-lg-12">
-
 			<ul class="nav nav-tabs">
 		  <li class="nav-item">
-		    <a class="nav-link active" href="index.html">Home</a>
+		    <a class="nav-link" href="Home.html">Home</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="entry.html">Product Entry</a>
+		    <a class="nav-link disabled" href="entry.html">Product Entry</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="Verification.html">Product Verification</a>
+		    <a class="nav-link disabled" href="Verification.html">Product Verification</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link primary" href="Updation.html">Ownership Updation</a>
+		    <a class="nav-link disabled" href="Updation.html">Ownership Updation</a>
 		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="login.html">Log In</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="adminlogin.html">Admin LogIn</a>
-		  </li>
+		</ul>
 	</div>
-	<div class="jumbotron">
-  		<div class="container">
-    		<h1 class="display-4">Welcome</h1>
-    		<p class="lead">An online platform for helping farmers to get the quality assurance of crops </p>
-  		</div>
+	<br><br><br>
+	<div class="container col-lg-3">
+		<h3>login here !</h3>
+	<form >
+	  	<div class="form-group ">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <button type="submit" class="btn btn-success" formaction="index.html" onclick="return verify()">Submit</button>	 <BR> 
+	  &nbsp;&nbsp;&nbsp;<small>Are you an admin? click here</small>
+	  <button type="submit"  formaction="adminlogin.html">Admin Login</button>
+	</form>
 	</div>
-
-	<div class="container">
-  <div class="row align-items-center">
-    <div class="col-sm-4">
-      
-    </div>
-   
-  </div>
-</div>
-
-		
-		
-	</div>
-	<div class="container">	
+	<br><br><br><br><br>
+	<div class="container bottom">	
 	<footer>
 		<center><small>
 	<p>&copy;Access Denied team - participated in <a href="https://mumbaihackathon.in/">Mumbai Hackathon</a>.</p>
