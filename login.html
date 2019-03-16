@@ -18,8 +18,7 @@
 		else 
 		return true;		
 		}
-		function adlog() {
-			document.forms['adlog'].action='adminlogin.html'		}
+		
 
 			</script>
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -47,7 +46,7 @@
 	<br><br><br>
 	<div class="container col-lg-3">
 		<h3>login here !</h3>
-	<form onsubmit="return verify()">
+	<form >
 	  	<div class="form-group ">
 	    <label for="exampleInputEmail1">Email address</label>
 	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -56,9 +55,9 @@
 	    <label for="exampleInputPassword1">Password</label>
 	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 	  </div>
-	  <button type="submit" class="btn btn-success">Submit</button>	 <BR> 
+	  <button type="submit" class="btn btn-success" formaction="index.html" onclick="return verify()">Submit</button>	 <BR> 
 	  &nbsp;&nbsp;&nbsp;<small>Are you an admin? click here</small>
-	  <input type="button" value="admin login" id="adminlogin" onclick="adlog()">
+	  <button type="submit"  formaction="adminlogin.html">Admin Login</button>
 	</form>
 	</div>
 	<br><br><br><br><br>
