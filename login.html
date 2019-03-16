@@ -18,7 +18,8 @@
 		else 
 		return true;		
 		}
-		
+		function adlog() {
+			document.forms['adlog'].action='adminlogin.html'		}
 
 			</script>
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -55,9 +56,9 @@
 	    <label for="exampleInputPassword1">Password</label>
 	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 	  </div>
-	  <button type="submit" class="btn btn-success">Submit</button>	  
+	  <button type="submit" class="btn btn-success">Submit</button>	 <BR> 
 	  &nbsp;&nbsp;&nbsp;<small>Are you an admin? click here</small>
-	  <button type="submit" >Admin Login</button>
+	  <input type="button" value="admin login" id="adminlogin" onclick="adlog()">
 	</form>
 	</div>
 	<br><br><br><br><br>

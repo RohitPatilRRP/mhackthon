@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Verification</title>
+	<title>Updation</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
@@ -20,10 +20,10 @@
 		    <a class="nav-link " href="entry.html">Product Entry</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link active" href="Verification.html">Product Verification</a>
+		    <a class="nav-link " href="Verification.html">Product Verification</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link primary" href="Updation.html">Ownership Updation</a>
+		    <a class="nav-link active" href="Updation.html">Ownership Updation</a>
 		  </li>
 		  <li class="nav-item">
 		    <a class="nav-link disabled" href="login.html">Log In</a>
@@ -33,15 +33,23 @@
 		  </li>
 	</div>
 	<br><br><br>
-<div class="container col-lg-3">
-		<h3>Product Verification</h3>
-		<br>	
+	<div class="container col-lg-6">
+		<h3>Updation</h3>
 	<form>
-	  	<div class="form-group">
-	    <input type="text" class="form-control" id="Cropid" placeholder="Enter the 16-digit crop ID">
-	  </div><center>
-	  <button type="submit" class="btn btn-primary">Verify</button> </center>
-	  <br> 
+		<div class="form-group">
+	    <label for="Cid">Crop id</label>
+	   <input type="text" class="form-control" id="Cid" placeholder="Enter the current Crop id ">
+	  </div>
+	  	<div class="form-group ">
+	    <label for="Oname">New Owner Name</label>
+	    <input type="text" class="form-control" id="Oname" placeholder="Enter new owner's fist and last name">
+	  </div>
+	  <div class="form-group">
+	    <label for="Cprice">Cost Price</label>
+	   <input type="text" class="form-control" id="Cprice" placeholder="Enter the Cost Price of your crop">
+	  </div>
+	  <button type="submit" class="btn btn-success">Submit</button> 
+	  <button type="reset" class="btn btn-danger">Reset</button>	<br> 
 	  
 	</form>
 	</div>
