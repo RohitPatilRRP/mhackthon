@@ -6,7 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Log In</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		function verify(){
+		var mail = document.getElementById("exampleInputEmail1").value;
+		var pwd = document.getElementById("exampleInputPassword1").value;
+		if(mail != "abc@gmail.com" || pwd != 12345)
+			{
+				alert("Incorrect Mail id or Password");
+				return false;
+				}
+		else 
+		return true;		
+		}
+		
+
+			</script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	 -->
 </head>
 
 <body>
@@ -30,7 +46,7 @@
 	<br><br><br>
 	<div class="container col-lg-3">
 		<h3>login here !</h3>
-	<form>
+	<form onsubmit="return verify()">
 	  	<div class="form-group ">
 	    <label for="exampleInputEmail1">Email address</label>
 	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
